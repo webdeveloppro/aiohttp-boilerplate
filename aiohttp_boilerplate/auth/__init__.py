@@ -12,9 +12,9 @@ async def validate_token(token: str) -> Mapping:
     if len(token.split(' ')) == 2:
         _, _, _token = token.partition(' ')
 
-    if token is None or len(token) < 100:
+    if token is None or len(token) < 100: # Todo, why 100?
         raise JSONHTTPError(
-            {"__error__": "Authentication"},
+            {"__error__": "Authentication error"},
             aiohttp.web.HTTPUnauthorized,
         )
 

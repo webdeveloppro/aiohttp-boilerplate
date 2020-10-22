@@ -1,5 +1,7 @@
 from aiohttp import web
 
+import logging
+
 from .options import ObjectView
 from .exceptions import JSONHTTPError
 
@@ -74,6 +76,7 @@ class CreateView(ObjectView):
         except Exception as e:
             # ToDo
             # Add logger
+            logging.exception('error')
             raise JSONHTTPError({'error': str(e)})
 
         self.data.update(await self.before_create(data))
