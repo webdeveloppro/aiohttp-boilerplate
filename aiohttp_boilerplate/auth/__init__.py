@@ -44,9 +44,6 @@ class Auth:
 
     async def auth_user(self, is_superadmin=False):
         token = self.request.headers.get('Authorization', '')
-        if not token:
-            return
-
         self.user = await validate_token(token)
 
         if is_superadmin:
