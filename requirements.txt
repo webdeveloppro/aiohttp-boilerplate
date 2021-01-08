@@ -1,5 +1,5 @@
-aiohttp==3.6.2
-asyncpg==0.20.1
+aiohttp==3.7.3
+asyncpg==0.21.0
 marshmallow==2.19.5
 PyJWT==1.7.1
 ujson==1.35
