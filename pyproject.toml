@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "aiohttp-boilerplate"
-version = "0.1.16"
+version = "0.2.1"
 description = ""
 authors = ["Vladyslav Tarasenko <vladka@webdevelop.pro>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-aiohttp = "=3.6.2"
-asyncpg = "=0.20.1"
+aiohttp = "=3.7.2"
+asyncpg = "=0.21.0"
 marshmallow = "=2.19.5"
 ujson = "=1.35"
 uvloop = "=0.14.0"
